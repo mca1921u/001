@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مانشستر سيتي</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #6CABDD; /* الأزرق الخاص بالسيتي */
+      font-family: "Tahoma", sans-serif;
+      color: white;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 30px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      color: #333;
+      border-radius: 20px;
+      padding: 20px;
+      width: 150px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    .icon {
+      font-size: 40px;
+      background: #6CABDD;
+      color: white;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 15px auto;
+    }
+
+    .card p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+  </style>
+  <!-- أيقونات Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- شعار مانشستر سيتي -->
+  <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt="شعار مانشستر سيتي">
+
+  <div class="card-container">
+    <!-- Instagram -->
+    <div class="card">
+      <a href="https://www.instagram.com/x_soheib_yt/" target="_blank">
+        <div class="icon"><i class="fab fa-instagram"></i></div>
+        <p>Instagram</p>
+      </a>
+    </div>
+
+    <!-- الألعاب (مرتبطة بالصفحة الثانية games.html) -->
+    <div class="card">
+      <a href="games.html">
+        <div class="icon"><i class="fas fa-gamepad"></i></div>
+        <p>games</p>
+      </a>
+    </div>
+
+    <!-- السيرفر -->
+    <div class="card">
+      <a href="https://discord.gg/3tYt9fuQ" target="_blank">
+        <div class="icon"><i class="fab fa-discord"></i></div>
+        <p>server
+        </p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
