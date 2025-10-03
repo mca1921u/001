@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مانشستر سيتي</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #6CABDD; /* الأزرق الخاص بالسيتي */
+      font-family: "Tahoma", sans-serif;
+      color: white;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 30px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      color: #333;
+      border-radius: 20px;
+      padding: 20px;
+      width: 150px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    .icon {
+      font-size: 40px;
+      background: none;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 15px auto;
+      transition: transform 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.2);
+    }
+
+    .card p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .icon img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease;
+    }
+
+    .icon img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- شعار مانشستر سيتي -->
+  <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt="شعار مانشستر سيتي">
+
+  <div class="card-container">
+    <!-- Instagram -->
+    <div class="card">
+      <a href="https://www.instagram.com/x_soheib_yt/" target="_blank">
+        <div class="icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </div>
+        <p>Instagram</p>
+      </a>
+    </div>
+
+    <!-- Games -->
+    <div class="card">
+      <a href="games.html">
+        <div class="icon" style="font-size:50px; color:black;">🎮</div>
+        <p>Games</p>
+      </a>
+    </div>
+
+    <!-- Discord Server -->
+    <div class="card">
+      <a href="https://discord.gg/3tYt9fuQ" target="_blank">
+        <div class="icon">
+          <img src="https://img.icons8.com/?size=100&id=M725CLW4L7wE&format=png&color=000000" alt="Discord">
+        </div>
+        <p>Server</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

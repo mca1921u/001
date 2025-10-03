@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مولودية الجزائر</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #e74c3c, #27ae60);
+      font-family: "Tahoma", sans-serif;
+      color: white;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      color: #333;
+      border-radius: 20px;
+      padding: 20px;
+      width: 150px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    .icon {
+      font-size: 40px;
+      background: none;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 15px auto;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .icon:hover {
+      transform: scale(1.2);
+    }
+
+    .card p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .icon img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease;
+    }
+
+    .icon img:hover {
+      transform: scale(1.2);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <!-- Download Computer Games -->
+    <div class="card">
+      <a href="https://fitgirl-repacks.site/" target="_blank">
+        <div class="icon">
+          <img src="https://img.icons8.com/?size=100&id=72390&format=png&color=000000" alt="Download Computer Games">
+        </div>
+        <p>Download Computer Games</p>
+      </a>
+    </div>
+
+    <!-- Krunker -->
+    <div class="card">
+      <a href="https://krunker.io/" target="_blank">
+        <div class="icon">
+          <img src="https://img.icons8.com/?size=100&id=4aiAt2in50N0&format=png&color=000000" alt="Krunker">
+        </div>
+        <p>Krunker</p>
+      </a>
+    </div>
+
+    <!-- لا تفتح -->
+    <div class="card">
+      <div class="icon" id="noOpen">
+        <img src="https://img.icons8.com/?size=100&id=TfzCmm9w8wIV&format=png&color=000000" alt="لا تفتح">
+      </div>
+      <p>لا تفتح</p>
+    </div>
+  </div>
+
+  <script>
+    const noOpenIcon = document.getElementById('noOpen');
+    noOpenIcon.addEventListener('click', () => {
+      noOpenIcon.querySelector('img').src = 'https://www.emojiall.com/images/240/emojitwo/1f595.png';
+    });
+  </script>
+</body>
+</html>
+
